@@ -1,0 +1,6 @@
+$git config --global user.name "sohee-commits"
+$git config --global user.email "mintopiate@gmail.com"
+$git clone https://github.com/sohee-commits/-1-
+$git add . && git commit -m "Ваш комментарий" 
+$git remote add origin https://github.com/sohee-commits/-1-/
+$git push -u origin master
