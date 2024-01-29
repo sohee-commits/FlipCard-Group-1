@@ -48,7 +48,7 @@ def openLogin():
         login,
         text='Зарегистрироваться', 
         font=('Roboto', 16, 'bold'),
-        foreground='#FFFFFF',
+        foreground='#fdfdfd',
         background='#0047AB',
         width=20,
         height=2, 
@@ -88,7 +88,7 @@ description = Label(
 register = Button(
     text='Зарегистрироваться', 
     font=('Roboto', 16, 'bold'),
-    foreground='#FFFFFF',
+    foreground='#fdfdfd',
     background='#0047AB',
     width=20,
     height=2, 
