@@ -1,5 +1,4 @@
 from tkinter import *
-from tkinter import ttk
 import menu 
 
 # login
@@ -16,35 +15,40 @@ def openLogin():
         font=('Roboto', 32, 'bold'),
         foreground='#0047AB',
         background='#fdfdfd'
-    ).place(relx=.5, y=195, anchor='n');
+    )
+    topic.place(relx=.5, y=195, anchor='n');
 
     emailLabel = Label(
         login,
         text='Почта', 
         font=('Roboto', 16, 'bold'),
         background='#fdfdfd'
-    ).place(relx=.5, y=265, anchor='n');
+    )
+    emailLabel.place(relx=.5, y=265, anchor='n');
 
     email = Entry(
         login,
         border=5, 
         background='#fdfdfd', 
         font=('Roboto', 16), 
-    ).place(relx=.5, y=295, anchor='n');
+    )
+    email.place(relx=.5, y=295, anchor='n');
 
     passwordLabel = Label(
         login,
         text='Пароль', 
         font=('Roboto', 16, 'bold'),
         background='#fdfdfd'
-    ).place(relx=.5, y=355, anchor='n');
+    )
+    passwordLabel.place(relx=.5, y=355, anchor='n');
 
     password = Entry(
         login,
         border=5, 
         background='#fdfdfd', 
         font=('Roboto', 16), 
-    ).place(relx=.5, y=385, anchor='n');
+    )
+    password.place(relx=.5, y=385, anchor='n');
 
     register = Button(
         login,
@@ -56,4 +60,7 @@ def openLogin():
         height=2, 
         cursor='hand2',
         command=menu.openMenu
-    ).place(relx=.5, y=445, anchor='n');
+    )
+    register.place(relx=.5, y=445, anchor='n');
+
+    login.mainloop()
