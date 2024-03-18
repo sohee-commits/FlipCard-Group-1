@@ -1,5 +1,6 @@
 from tkinter import *
-import menu 
+from tkinter import messagebox
+import menu_validate 
 
 # login
 def openLogin():
@@ -47,6 +48,7 @@ def openLogin():
         border=5, 
         background='#fdfdfd', 
         font=('Roboto', 16), 
+        show='*'
     )
     password.place(relx=.5, y=385, anchor='n');
 
@@ -59,7 +61,7 @@ def openLogin():
         width=20,
         height=2, 
         cursor='hand2',
-        command=menu.openMenu
+        command=lambda: menu_validate.validate(email.get(), password.get())
     )
     register.place(relx=.5, y=445, anchor='n');
 
